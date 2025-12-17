@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-gradient-to-br from-purple-900 via-blue-900 to-indigo-900;
+    @apply min-h-screen;
+    @apply overflow-x-hidden;
+  }
+}
+
+@layer utilities {
+  .text-gradient {
+    @apply bg-gradient-to-r from-yellow-300 via-pink-400 to-purple-400;
+    @apply bg-clip-text text-transparent;
+    @apply animate-glow;
+  }
+}
